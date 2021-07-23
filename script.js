@@ -125,7 +125,7 @@ function performOperation (value) {
         document.getElementById('screen').removeChild(document.getElementById('screen').firstChild);
     }
     //pass num as an int to a
-    a = parseInt(num);
+    a = parseFloat(num);
     //operator is set to the value passed into this function
     operator = value;
 }
@@ -146,7 +146,7 @@ function returnOperation () {
         document.getElementById('screen').removeChild(document.getElementById('screen').firstChild);
     }
     //pass num as an int to b
-    b = parseInt(num);
+    b = parseFloat(num);
     //this switch statements checks which operator to use when returnin the result
     switch (operator) {
         case '+':
@@ -163,7 +163,7 @@ function returnOperation () {
             break;
     }
     //prints result on the screen element
-    printResult(parseInt(result));
+    printResult(parseFloa(result));
 }
 //clear operation
 function clearOperation () {
